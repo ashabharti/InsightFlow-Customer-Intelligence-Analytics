@@ -3,7 +3,7 @@
 ## Project Name
 InsightFlow
 
-## Tagline
+## Taglinegit status
 From Raw Data to Smarter Decisions.
 
 ## Product Vision
