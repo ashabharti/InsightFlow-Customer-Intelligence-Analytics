@@ -4,8 +4,8 @@
 - [x] Environment Setup
 
 ## Phase 1
-- [ ] Business Understanding
-- [ ] Dataset Study
+- [x] Business Understanding
+- [x] Dataset Study
 - [ ] Database Design
 
 ## Phase 2
