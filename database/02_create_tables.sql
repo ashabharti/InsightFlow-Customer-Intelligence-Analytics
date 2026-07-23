@@ -103,3 +103,16 @@ CREATE TABLE IF NOT EXISTS reviews (
     review_creation_date TIMESTAMP NOT NULL,
     review_answer_timestamp TIMESTAMP NOT NULL
 );
+
+
+-- ==========================================
+-- Geolocation
+-- ==========================================
+
+CREATE TABLE IF NOT EXISTS geolocation (
+    geolocation_zip_code_prefix INTEGER NOT NULL,
+    geolocation_lat DECIMAL(10,8) NOT NULL,
+    geolocation_lng DECIMAL(11,8) NOT NULL,
+    geolocation_city VARCHAR(100) NOT NULL,
+    geolocation_state CHAR(2) NOT NULL
+);
