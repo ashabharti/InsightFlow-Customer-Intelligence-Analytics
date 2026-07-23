@@ -116,3 +116,12 @@ CREATE TABLE IF NOT EXISTS geolocation (
     geolocation_city VARCHAR(100) NOT NULL,
     geolocation_state CHAR(2) NOT NULL
 );
+
+-- ==========================================
+-- Category Translation
+-- ==========================================
+
+CREATE TABLE IF NOT EXISTS category_translation (
+    product_category_name VARCHAR(100) PRIMARY KEY,
+    product_category_name_english VARCHAR(100) NOT NULL
+);
