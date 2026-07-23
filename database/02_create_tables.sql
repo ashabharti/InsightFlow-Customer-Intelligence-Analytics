@@ -89,3 +89,17 @@ CREATE TABLE IF NOT EXISTS payments (
 
     PRIMARY KEY (order_id, payment_sequential)
 );
+
+-- ==========================================
+-- Reviews
+-- ==========================================
+
+CREATE TABLE IF NOT EXISTS reviews (
+    review_id VARCHAR(32) PRIMARY KEY,
+    order_id VARCHAR(32) NOT NULL,
+    review_score INTEGER NOT NULL,
+    review_comment_title TEXT,
+    review_comment_message TEXT,
+    review_creation_date TIMESTAMP NOT NULL,
+    review_answer_timestamp TIMESTAMP NOT NULL
+);
