@@ -31,3 +31,20 @@ CREATE TABLE orders (
     order_delivered_customer_date TIMESTAMP,
     order_estimated_delivery_date TIMESTAMP NOT NULL
 );
+
+-- ==========================================
+-- Table: order_items
+-- Purpose: Stores the products included in each order
+-- ==========================================
+
+CREATE TABLE order_items (
+    order_id VARCHAR(32) NOT NULL,
+    order_item_id INTEGER NOT NULL,
+    product_id VARCHAR(32) NOT NULL,
+    seller_id VARCHAR(32) NOT NULL,
+    shipping_limit_date TIMESTAMP NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    freight_value DECIMAL(10,2) NOT NULL,
+
+    PRIMARY KEY (order_id, order_item_id)
+);
