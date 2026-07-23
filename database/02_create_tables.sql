@@ -75,3 +75,17 @@ CREATE TABLE IF NOT EXISTS sellers (
     seller_city VARCHAR(100) NOT NULL,
     seller_state CHAR(2) NOT NULL
 );
+
+-- ==========================================
+-- Payments
+-- ==========================================
+
+CREATE TABLE IF NOT EXISTS payments (
+    order_id VARCHAR(32) NOT NULL,
+    payment_sequential INTEGER NOT NULL,
+    payment_type VARCHAR(30) NOT NULL,
+    payment_installments INTEGER NOT NULL,
+    payment_value DECIMAL(10,2) NOT NULL,
+
+    PRIMARY KEY (order_id, payment_sequential)
+);
