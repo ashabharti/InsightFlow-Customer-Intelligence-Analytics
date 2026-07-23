@@ -64,3 +64,14 @@ CREATE TABLE IF NOT EXISTS products (
     product_height_cm INTEGER,
     product_width_cm INTEGER
 );
+
+-- ==========================================
+-- Sellers
+-- ==========================================
+
+CREATE TABLE IF NOT EXISTS sellers (
+    seller_id VARCHAR(32) PRIMARY KEY,
+    seller_zip_code_prefix INTEGER NOT NULL,
+    seller_city VARCHAR(100) NOT NULL,
+    seller_state CHAR(2) NOT NULL
+);
