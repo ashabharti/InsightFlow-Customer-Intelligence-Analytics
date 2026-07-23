@@ -1,0 +1,17 @@
+ -- ==========================================
+-- Customers Table
+-- ==========================================
+
+
+-- ==========================================
+-- Table: customers
+-- Purpose: Stores customer master information
+-- ==========================================
+
+CREATE TABLE customers (
+    customer_id VARCHAR(32) PRIMARY KEY,
+    customer_unique_id VARCHAR(32) NOT NULL,
+    customer_zip_code_prefix INTEGER NOT NULL,
+    customer_city VARCHAR(100) NOT NULL,
+    customer_state CHAR(2) NOT NULL
+);
