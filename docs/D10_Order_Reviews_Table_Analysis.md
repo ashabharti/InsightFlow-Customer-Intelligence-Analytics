@@ -106,3 +106,10 @@ The Reviews table stores customer feedback for completed orders. It helps the co
 - Customer comments provide qualitative feedback.
 - This table is valuable for sentiment analysis and service improvement.
 - When combined with Orders, Products, and Sellers, it helps identify factors affecting customer satisfaction.
+
+
+## Design Note
+
+During database implementation, it was found that the `review_id` column contains duplicate values (814 duplicate IDs) in the Olist dataset. Therefore, `review_id` alone cannot serve as the primary key.
+
+To preserve the original dataset and maintain entity integrity, a composite primary key (`order_id`, `review_id`) was used.
