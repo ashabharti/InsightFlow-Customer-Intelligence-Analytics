@@ -6,11 +6,11 @@
 ## Phase 1
 - [x] Business Understanding
 - [x] Dataset Study
-- [ ] Database Design
+- [x] Database Design
 
 ## Phase 2
-- [ ] Data Cleaning
-- [ ] ETL Pipeline
+- [x] Data Cleaning (Data imported and validated for analysis)
+- [x] ETL Pipeline (Database creation, table creation, constraints, and data loading completed)
 
 ## Phase 3
 - [ ] SQL Analytics
@@ -33,5 +33,3 @@
 ## Phase 9
 - [ ] Documentation
 
-## Phase 10
-- [ ] Interview Preparation
