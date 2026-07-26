@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS reviews (
     review_comment_title TEXT,
     review_comment_message TEXT,
     review_creation_date TIMESTAMP NOT NULL,
-    review_answer_timestamp TIMESTAMP NOT NULL
+    review_answer_timestamp TIMESTAMP NOT NULL,
 
     PRIMARY KEY (order_id, review_id)
 );
