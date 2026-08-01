@@ -9,7 +9,6 @@
 -- Purpose:
 -- Find customers generating the highest revenue.
 
--- ==========================================================
 
 WITH customer_revenue AS (
 SELECT
